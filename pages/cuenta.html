@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cuenta.css">
+    <link rel="shortcut icon" href="../resources/img/Alexandaria.png" type="image/x-icon">
+    <title> Alexandria </title>
+</head>
+<body>
+    <header>
+        <section>
+            <a href="../index.html">
+                <h1> ALEXANDRIA <img src="../resources/img/Alexandaria.png" alt="Logotipo de la página"></h1>
+            </a>
+        </section>
+        <section>
+            <div><h2><a href="../index.html"> Inicio </a></h2></div>
+            <div><h2><a href="catalogo.html"> Catálogo </a></h2></div>
+            <div><h2><a href="carrito.html"> Carrito </a></h2></div>
+            <div><h2><a href="contacto.html"> Contacto </a></h2></div>
+            <div class="select"><h2><a href="cuenta.html"> Cuenta </a></h2></div>
+        </section>
+    </header>
+    <main>
+        <h1> DARSE DE ALTA </h1>
+        <form>
+            <fieldset>
+                <legend> Datos personales </legend>
+                <input type="text" name="nombre" placeholder="Nombre" pattern="^[A-ZÁÉÍÓÚ][a-záéíóú]{1,15}(\s[A-ZÁÉÍÓÚ][a-záéíóú]{1,15})?$" required>
+                <input type="text" name="apellidos" placeholder="Apellidos" pattern="^^[A-ZÁÉÍÓÚ][a-záéíóú]{1,15}(\s[A-ZÁÉÍÓÚ][a-záéíóú]{1,15})*$" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" pattern="^[0-9]{9}$" required>
+                <input type="text" name="ciudad" placeholder="Ciudad" pattern="^[A-ZÁÉÍÓÚa-záéíóú\s]{3,20}$" required>
+            </fieldset>
+            <fieldset>
+                <legend> Información de cuenta </legend>
+                <input type="text" name="user" placeholder="Usuario" pattern="^[a-z_0-9]{3,15}$" required>
+                <input type="email" name="email" placeholder="Email" pattern="^\w.{3,}@\w{3,}(\w{3,})*$" required>
+                <input type="password" name="password" placeholder="Contraseña" pattern=".{8,}" required>
+                <input type="password" name="passwordConfirm" placeholder="Repetir contraseña" pattern=".{8,}" required>
+            </fieldset>
+            <button id="submit"> Registrarse </button>
+        </form>
+    </main>
+    <footer>
+        <section>
+            <h3> ATENCIÓN AL CLIENTE </h3>
+            <ul>
+                <li> Teléfono: <a href="tel:+34910526134"> 910 52 61 34 </a></li>
+                <li> Correo electrónico: <a href="mailto:clientes@alexandria.es"> clientes@alexandria.es </a></li>
+                <li> Ubicación: <a href="https://maps.app.goo.gl/W7qi6XZcfY3zeQFv8"> Calle de Diego de León, Madrid </a></li>
+            </ul>
+        </section>
+        <section>
+            <h3> TRABAJA CON NOSOTROS </h3>
+            <ul>
+                <li> Desarrollo web: <a href="mailto:desarrollo@alexandria.es "> desarrollo@alexandria.es </a></li>
+                <li> Venta al público: <a href="mailto:ventas@alexandria.es "> ventas@alexandria.es </a></li>
+                <li> Transporte y almacén: <a href="mailto:almacen@alexandria.es "> almacen@alexandria.es </a></li>
+            </ul>
+        </section>
+        <section>
+            <h3> REDES SOCIALES </h3>
+            <ul>
+                <li> <a href="https://www.facebook.com/"> Facebook <img src="../resources/img/facebook.png" alt="Logotipo de Facebook"></a></li>
+                <li> <a href="https://twitter.com/"> Twitter <img src="../resources/img/twitter.png" alt="Logotipo de Twitter"></a></li>
+                <li> <a href="https://instagram.com/">Instagram <img src="../resources/img/instagram.png" alt="Logotipo de Instagram"></a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</pages>
